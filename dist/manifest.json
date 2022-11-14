@@ -1,0 +1,20 @@
+{
+    "name": "Automaited Extension",
+    "description": "Read and write from/to forms",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "automaited.js"
+            ],
+            "matches": [
+                "https://npdot9.csb.app/"
+            ]
+        }
+    ]
+}
